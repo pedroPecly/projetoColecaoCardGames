@@ -1,0 +1,1 @@
+Este projeto, desenvolvido em colaboração na disciplina de Programação Orientada a Objetos no curso de Sistemas de Informação do Instituto Federal Fluminense (IFF), destaca-se pela implementação das metodologias CRUD (Create, Read, Update, Delete). Utiliza a linguagem de programação Java em conjunto com a interface gráfica JavaFX, abordando o tema de uma coleção de card games.
