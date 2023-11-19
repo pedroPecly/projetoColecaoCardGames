@@ -1,3 +1,7 @@
+CREATE DATABASE colecaocardgame;
+
+USE colecaocardgame;
+
 CREATE TABLE minhacolecao (
     id INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
     nome VARCHAR(255) NOT NULL,

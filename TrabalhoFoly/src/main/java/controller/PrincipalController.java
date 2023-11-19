@@ -155,11 +155,17 @@ public class PrincipalController implements Initializable {
         if (colecaoSelecionada != null) {
             Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
             alert.setTitle("Aviso");
-            alert.setContentText("confirma exclusao de " + colecaoSelecionada.getNome() + "?");
+            alert.setContentText("Confirma exclusão de " + colecaoSelecionada.getNome() + "?");
             Optional<ButtonType> result = alert.showAndWait();
-            if (result.get() == ButtonType.OK) {
+            if (result.isPresent() && result.get() == ButtonType.OK) {
                 try {
                     ColecaoDaoJdbc dao = DaoFactory.novoColecaoDaoJdbc();
+
+                    File imagemParaExcluir = new File(
+                            diretorioImagens + File.separator + colecaoSelecionada.getLocalImage());
+                    if (imagemParaExcluir.exists()) {
+                        imagemParaExcluir.delete();
+                    }
 
                     dao.excluir(colecaoSelecionada);
                     limparCampos();
@@ -172,7 +178,6 @@ public class PrincipalController implements Initializable {
                 }
             }
         }
-
     }
 
     @FXML
@@ -194,7 +199,6 @@ public class PrincipalController implements Initializable {
 
         if (file != null) {
             try {
-
                 File diretorioImagensFile = new File(diretorioImagens);
                 if (!diretorioImagensFile.exists()) {
                     diretorioImagensFile.mkdirs();
