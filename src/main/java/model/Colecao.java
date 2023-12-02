@@ -13,8 +13,7 @@ public class Colecao {
 
     }
 
-    public Colecao(int id, String nome, String valor, String tipo, String localImage, String cardGameName, boolean possuir) {
-        this.id = id;
+    public Colecao(String nome, String valor, String tipo, String localImage, String cardGameName, boolean possuir) {
         this.nome = nome;
         this.valor = valor;
         this.tipo = tipo;
