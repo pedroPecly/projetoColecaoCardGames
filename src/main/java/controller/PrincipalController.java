@@ -42,7 +42,7 @@ public class PrincipalController implements Initializable {
     @FXML
     private AnchorPane anchorPane;
     @FXML
-    private TableView<Colecao> tblContato;
+    private TableView<Colecao> tblCardGame;
     @FXML
     private TableColumn<Colecao, String> tblColNome;
     @FXML
@@ -109,7 +109,7 @@ public class PrincipalController implements Initializable {
     @FXML
     private void tblElementoOnAction(MouseEvent event) {
         limparCampos();
-        colecaoSelecionada = tblContato.selectionModelProperty().getValue().getSelectedItem();
+        colecaoSelecionada = tblCardGame.selectionModelProperty().getValue().getSelectedItem();
         if (colecaoSelecionada != null) {
             txtNome.setText(colecaoSelecionada.getNome());
             txtValor.setText(colecaoSelecionada.getValor());
@@ -150,7 +150,7 @@ public class PrincipalController implements Initializable {
 
     @FXML
     private void btnExcluirOnAction(ActionEvent event) {
-        colecaoSelecionada = tblContato.selectionModelProperty().getValue().getSelectedItem();
+        colecaoSelecionada = tblCardGame.selectionModelProperty().getValue().getSelectedItem();
 
         if (colecaoSelecionada != null) {
             Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
@@ -314,7 +314,7 @@ public class PrincipalController implements Initializable {
         }
 
         observableListColecao = FXCollections.observableArrayList(listaColecao);
-        tblContato.setItems(observableListColecao);
+        tblCardGame.setItems(observableListColecao);
     }
 
     private void cursorTratamento() {

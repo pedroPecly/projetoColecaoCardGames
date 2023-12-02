@@ -49,7 +49,7 @@
             </Button>
          </items>
       </ToolBar>
-      <TableView fx:id="tblContato" layoutX="10.0" layoutY="50.0" onMouseClicked="#tblElementoOnAction" prefWidth="690.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="40.0">
+      <TableView fx:id="tblCardGame" layoutX="10.0" layoutY="50.0" onMouseClicked="#tblElementoOnAction" prefWidth="690.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="40.0">
          <columns>
             <TableColumn fx:id="tblColNome" prefWidth="218.3999908566475" resizable="false" text="Nome" />
             <TableColumn fx:id="tblColValor" prefWidth="84.80000305175781" resizable="false" text="Valor" />
