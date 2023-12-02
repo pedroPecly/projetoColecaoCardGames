@@ -4,8 +4,8 @@ module start.projetopadrao {
     requires java.base;
     requires java.sql;
 
-    opens start.projetopadrao to javafx.fxml;
-    exports start.projetopadrao;
+    opens start to javafx.fxml;
+    exports start;
 
     opens controller to javafx.fxml;
     exports controller;

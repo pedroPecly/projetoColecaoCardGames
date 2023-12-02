@@ -36,7 +36,7 @@ import javafx.stage.FileChooser;
 import model.Colecao;
 import model.dao.ColecaoDaoJdbc;
 import model.dao.DaoFactory;
-import start.projetopadrao.App;
+import start.App;
 
 public class PrincipalController implements Initializable {
     @FXML

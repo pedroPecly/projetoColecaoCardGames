@@ -15,7 +15,7 @@ import javafx.scene.chart.PieChart;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import model.Colecao;
-import start.projetopadrao.App;
+import start.App;
 
 public class EstatisticaController implements Initializable {
 

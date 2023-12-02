@@ -1,7 +1,7 @@
 model\Colecao.class
 controller\PrincipalController.class
 model\dao\ConnFactory.class
-start\projetopadrao\App.class
+start\App.class
 model\dao\DaoFactory.class
 module-info.class
 model\dao\ColecaoDaoJdbc.class
