@@ -11,7 +11,6 @@ import java.io.IOException;
 public class App extends Application {
 
     private static Scene scene;
-    private static String caminho = "/view/";
 
     @Override
     public void start(Stage stage) throws IOException {
@@ -25,7 +24,7 @@ public class App extends Application {
     }
 
     private static Parent loadFXML(String fxml) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource(caminho + fxml + ".fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("/view/" + fxml + ".fxml"));
         return fxmlLoader.load();
     }
 
