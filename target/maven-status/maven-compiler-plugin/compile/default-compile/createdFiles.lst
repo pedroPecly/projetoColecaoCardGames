@@ -1,9 +1,0 @@
-model\Colecao.class
-controller\PrincipalController.class
-model\dao\ConnFactory.class
-start\App.class
-model\dao\DaoFactory.class
-module-info.class
-model\dao\ColecaoDaoJdbc.class
-model\dao\InterfaceDao.class
-controller\EstatisticaController.class
